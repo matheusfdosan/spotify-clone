@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/styles/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Spotify - Web player</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img
+          src="../src/assets/spotify-logo.svg"
+          alt="spotify-logo"
+          class="spotify-logo"
+          width="131px"
+          height="40px"
+        />
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="./">
+            <img src="../src/assets/start.svg" alt="start" />
+            Início
+          </a>
+        </li>
+        <li>
+          <a href="./">
+            <img src="../src/assets/search.svg" alt="search" />
+            Buscar
+          </a>
+        </li>
+        <li>
+          <a href="./">
+            <img src="../src/assets/library.svg" alt="library" />
+            Sua Biblioteca
+          </a>
+        </li>
+      </ul>
+      <ul class="rootlist-container">
+        <li>
+          <a href="./">
+            <img src="../src/assets/create-playlist.svg" alt="create-playlist" />
+            Criar playlist
+          </a>
+        </li>
+        <li>
+          <a href="./">
+            <img src="../src/assets/liked-songs.svg" alt="liked-songs" />
+            Músicas Curtidas
+          </a>
+        </li>
+        <li>
+          <a href="./">
+            <img src="../src/assets/your-episodes.svg" alt="your-episodes" />
+            Seus episódios
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="forward-back-buttons">
+        <button>
+          <img src="../src/assets/forward-button.svg" alt="forward-button" />
+        </button>
+        <button>
+          <img src="../src/assets/back-button.svg" alt="back-button" />
+        </button>
+      </div>
+      <div class="upgrade-and-account">
+        <button class="upgrade">Faça Upgrade</button>
+        <button class="account">
+          <img src="../src/images/my-account.jpg" alt="my-account" />
+          Matheus
+          <img src="../src/assets/arrow-down.svg" alt="arrow-down" />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="morning-aftenoon-evening"></h2>
+      <div class="elements"></div>
+      <h2>Seus programas</h2>
+      <div class="cards"></div>
+    </main>
+
+    <div class="music-player">
+      <div class="music-liked-picture">
+        <img src="../src/images/lofi-music.jpg" alt="lofi-music" />
+        <p>a moment in time</p>
+        <cite>Idealism, Lucid Green</cite>
+        <img
+          src="../src/assets/control-button-heart.svg"
+          alt="control-button-heart"
+        />
+        <img
+          src="../src/assets/picture-in-picture.svg"
+          alt="picture-in-picture"
+        />
+      </div>
+      <div class="control-music">
+        <img
+          src="../src/assets/control-button-shuffle.svg"
+          alt="button-shuffle"
+        />
+        <img
+          src="../src/assets/control-button-skip-back.svg"
+          alt="control-button-skip-back"
+        />
+        <img src="../src/assets/play.svg" alt="play-button" />
+        <img
+          src="../src/assets/control-button-skip-forward.svg"
+          alt="control-button-skip-forward"
+        />
+        <img
+          src="../src/assets/control-button-repeat.svg"
+          alt="control-button-repeat"
+        />
+      </div>
+      <div class="row-device-vol">
+        <img src="../src/assets/row.svg" alt="row" />
+        <img src="../src/assets/connect-device.svg" alt="connect-device" />
+        <img src="../src/assets/volume.svg" alt="volume" />
+      </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="../src/main.js"></script>
+  </body>
+</html>
