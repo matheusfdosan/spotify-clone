@@ -23,8 +23,8 @@ header {
 }
 
 .nav-bar {
-  background-color: #000;
   grid-area: menu;
+  background-color: #000;
 }
 
 main {
@@ -51,11 +51,12 @@ main {
 
 li a {
   display: flex;
-  gap: 10px;
   align-items: center;
-  color: #fff;
+  gap: 10px;
+
   text-decoration: none;
   font-weight: 800;
+  color: #fff;
 }
 
 .menu,
@@ -67,30 +68,23 @@ li a {
   border-bottom: 1px solid #181818;
 }
 
-.rootlist-container li:nth-child(1) img {
+.rootlist-container li img {
   width: 30px;
   height: 30px;
   text-align: center;
   padding: 7.5px 5px;
   border-radius: 5px;
+}
+
+.rootlist-container li:nth-child(1) img {
   background-color: #ffffff;
 }
 
 .rootlist-container li:nth-child(2) img {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding: 5px;
-  border-radius: 5px;
   background-image: linear-gradient(135deg, #450af5, #c4efd9);
 }
 
 .rootlist-container li:nth-child(3) img {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding: 5px;
-  border-radius: 5px;
   background-color: #181818;
 }
 
@@ -118,10 +112,12 @@ header {
 
 .forward-back-buttons button {
   background-color: #000000b3;
-  border-radius: 50%;
+
   width: 35px;
   height: 35px;
+
   border: none;
+  border-radius: 50%;
 }
 
 .upgrade-and-account {
@@ -129,24 +125,25 @@ header {
   gap: 1rem;
 }
 
-.upgrade {
-  border: 1px solid #ffffffb3;
-  padding: 5px 10px;
-  background: none;
-  color: #fff;
-  border-radius: 20px;
+.upgrade,
+.account {
   font-weight: 700;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.upgrade {
+  background: none;
+  border: 1px solid #ffffffb3;
+  border-radius: 20px;
 }
 
 button.account {
   display: flex;
   align-items: center;
   gap: 10px;
-  text-align: center;
-  padding: 5px 10px;
-  color: #fff;
-  border-radius: 20px;
-  font-weight: 700;
+
   background-color: #000000b3;
 }
 
@@ -160,4 +157,3 @@ button.account {
   width: 16px;
   height: 16px;
 }
-
