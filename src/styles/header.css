@@ -1,0 +1,92 @@
+header {
+  grid-area: header;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 15px;
+}
+
+.forward-back-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.forward-button,
+.back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--border-color-2);
+
+  width: 35px;
+  height: 35px;
+
+  border: none;
+  border-radius: 50%;
+}
+
+.forward-button:hover,
+.back-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.upgrade-and-account {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.upgrade,
+.account {
+  font-weight: 700;
+  color: var(--text-color);
+
+  padding: 0px 20px;
+
+  height: 35px;
+
+  border-radius: 20px;
+}
+
+.upgrade {
+  background: none;
+  border: 1px solid var(--border-color-3);
+  border-radius: 20px;
+}
+
+.upgrade:hover {
+  background-color: var(--border-color-2);
+  border: 1px solid var(--text-color);
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background-color: var(--border-color-2);
+  border: none;
+}
+
+.account:hover {
+  background-color: var(--bg-color-3);
+  cursor: pointer;
+}
+
+.account img:nth-child(1) {
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+}
+
+.account img:nth-child(2) {
+  width: 16px;
+  height: 16px;
+}

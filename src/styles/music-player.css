@@ -1,0 +1,49 @@
+.music-player {
+  grid-area: player;
+
+  display: flex;
+  justify-content: space-between;
+
+  position: fixed;
+  bottom: 0;
+
+  width: 100vw;
+  height: 90px;
+
+  background-color: var(--bg-color-2);
+  border-top: 1px solid var(--border-color-1);
+}
+
+.music-liked-picture img {
+  width: 90px;
+  height: 90px;
+}
+
+.music-liked-picture {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.music-liked-picture h3,
+.music-liked-picture p {
+  font-size: 13px;
+}
+
+.music-liked-picture h3:hover,
+.music-liked-picture p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+img.liked-btn,
+img.picture-in-picture {
+  width: 16px;
+  height: 16px;
+  opacity: 0.7;
+}
+
+img.liked-btn:hover,
+img.picture-in-picture:hover {
+  opacity: 1;
+}

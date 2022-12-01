@@ -1,0 +1,65 @@
+.spotify-logo {
+  width: 131px;
+  height: 40px;
+}
+
+.nav-bar {
+  grid-area: menu;
+  background-color: var(--bg-color-1);
+}
+
+.nav-bar li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.logo,
+.menu-one li,
+.menu-two li {
+  margin: 20px;
+  list-style-type: none;
+}
+
+.menu-one,
+.menu-two {
+  padding-top: 7.5px;
+}
+
+.menu-two li img {
+  width: 30px;
+  height: 30px;
+  
+  padding: 7.5px 5px;
+  
+  text-align: center;
+  
+  border-bottom: 1px solid var(--border-color-1);
+  border-radius: 5px;
+}
+
+.menu-two li:nth-child(1) img {
+  background-color: var(--text-color);
+}
+
+.menu-two li:nth-child(2) img {
+  background-image: var(--bg-color-button-liked-songs);
+}
+
+.menu-two li:nth-child(3) img {
+  background-color: var(--border-color-1);
+}
+
+.menu-two li,
+.menu-one li {
+  opacity: 0.7;
+}
+
+.menu-two li:hover,
+.menu-one li:hover {
+  opacity: 1;
+}

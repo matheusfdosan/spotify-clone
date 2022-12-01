@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "CircularStd";
+  src: url(./src/font/CircularStd-Light.otf) format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color-1: #000;
+  --bg-color-2: #121212;
+  --bg-color-3: #323232;
+  --bg-color-4: #323232a3;
+  --bg-color-button-liked-songs: linear-gradient(135deg, #450af5, #c4efd9);
+  --border-color-1: #181818;
+  --border-color-2: #000000b3;
+  --border-color-3: #ffffff54;
+  --text-color: #fff;
+  --font-family: "CircularStd", Helvetica, sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "menu header header"
+    "menu main main"
+    "menu player player";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto 100vh auto;
+
+  background-color: var(--bg-color-2);
+
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
