@@ -24,7 +24,8 @@ main h2 {
 }
 
 .musics,
-.artists {
+.artists,
+.mixes {
   margin-top: 20px;
   margin-bottom: 40px;
 
@@ -40,6 +41,10 @@ main h2 {
   box-shadow: 0 8px 24px rgb(0 0 0 / 50%);
   border-radius: 5px;
   margin-bottom: 5px;
+}
+
+.mixes {
+  padding-bottom: 114px;
 }
 
 .figure {
