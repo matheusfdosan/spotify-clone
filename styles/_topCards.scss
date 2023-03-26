@@ -1,0 +1,68 @@
+.top-cards {
+  display: grid;
+  grid-gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  .card {
+    min-width: 200px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #2b2a2e;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &:hover {
+      background-color: #3d3b41;
+      cursor: pointer;
+
+      .play {
+        display: block;
+      }
+    }
+
+    img {
+      width: 7.4rem;
+      height: 7.4rem;
+    }
+
+    p {
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: bolder;
+      letter-spacing: 0.05rem;
+      width: fit-content;
+      word-break: keep-all;
+    }
+
+    .play {
+      flex: 1;
+      text-align: right;
+      margin-right: 10px;
+      display: none;
+      transition: transform 200ms ease;
+
+      button {
+        width: 4.2rem;
+        height: 4.2rem;
+        border-radius: 50%;
+        border: none;
+        background: #1ed760;
+        box-shadow: 0px 6px 7px #25242467;
+
+        &:hover {
+          background: #47cf77;
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+
+        svg {
+          position: relative;
+          top: 7%;
+          left: 0;
+        }
+      }
+    }
+  }
+}
