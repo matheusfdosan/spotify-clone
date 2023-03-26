@@ -1,0 +1,33 @@
+:root {
+  --black: #000;
+  --gray: #b3b3b3;
+}
+
+@font-face {
+  font-family: "CircularSTD";
+  src: url(../font/CircularStd-Light.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "CircularSTD", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+html {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+body {
+  display: flex;
+}
